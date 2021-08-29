@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pemesanan</title>
+</head>
+<body>
+    <header style="height: 30%;" class="header-main">
+        <!-- Navigasi Bar-->
+       <div class="navbar-main sticky-top">
+           <ul class="navbar-bar">
+               <li> <a href="index.html"><p class="navbar-left">KANTIN FTI</p></a></li>
+               <li class="navbar-right"><a target="_blank" style="text-decoration: none;color: white" href="https://www.instagram.com/edwindtr__/"><img class="navbar-logo" src="./Images/Logo-Profil.png" alt="a"><a></li>
+               <li class="navbar-right"><a style="text-decoration: none;color: white" href="pemesanan.html"><img class="navbar-logo2" src="./Images/Logo-Keranjang.png" alt="alternative"></a></li>
+               <li class="navbar-right"><a onclick="alert('Coming Soon!')" style="text-decoration: none;color: white" href="#">Hubungi</a></li>
+               <li class="navbar-right"><a style="text-decoration: none;color: white;" href="menu.html">Menu</a></li>
+           </ul>
+       </div>
+       <div class="header-logo align-item-center">
+         <img  class="footer-logo-img" src="./Images/Logo-UKSW.png" alt="T">
+         <img  class="footer-logo-img" src="./Images/Logo-Kemahasiswaan.png" alt="T">
+         <img  class="footer-logo-img" src="./Images/Logo-FTI.png" alt="T">
+       </div>
+       <div class="banner-text">
+        <h1 class="text-center" style="font-size: 35px;margin-top: 35mm;">Pemesanan</h1>
+    </div>
+   </header>
+   <section>
+    <div class="card-pemesanan">
+        <img class="card-pemesanan-img" src="Images/Gambar/1_copy_400x400_1.png">
+          <p class="card-pemesanan-deskripsi" >Mi Goreng Original</p>
+          <p class="card-pemesanan-deskripsi-produk">
+           <br> <span class="card-komposisi">KOMPOSISI :</span> <br>
+            MI: Tepung terigu, minyak nabati, tepung tapioka, garam, penstabil, pengatur keasaman, mineral (zat besi), pewarna (tartrazin CI 19140), antioksidan (TBHQ). BUMBU: Gula, garam, penguat rasa mononatrium glutamat (MSG), bubuk bawang putih, bubuk bawang bombay, perisa identik alami ayam (mengandung penguat rasa dinatrium inosinat dan guanilat), bubuk lada dan vitamin (A, B1, B6, B12, Niasin, Asam Folat, Pantotenat). MINYAK: Minyak nabati dan bawang merah. KECAP MANIS: Gula (mengandung sulfit), air.
+          </p>
+          <p class="card-pemesanan-deskripsi-produk" >
+            <span class="card-komposisi">TAKARAN PER SERVING :</span> <br>
+            Energi 390kkal. % AKg: Protein: 8g, Lemak Total: 17g, Lemak Jenuh: 11g, kolesterol: 0mg, Karbohidrat: 52g, Gula: 8,5g, Natrium: 830mg
+          </p>
+          <p class="card-pemesanan-harga-lama" >
+            <del>Harga Lama : Rp 6.500,00</del>
+          </p>
+          <p class="card-pemesanan-harga-baru">
+            Harga : <span>Rp 6.000,00</span>
+          </p>
+    </div>
+        <p class="card-pemesanan-jumlah-deskripsi">Jumlah :</p>
+        <div class="card-pemesanan-jumlah">
+            <input type="button" value="-" id="kurang" onclick="kurang()">
+            <input type="text" size="25" value="1" id="jumlah">
+            <input type="button" value="+" id="tambah" onclick="tambah()">
+        </div>
+        <div>
+            <br><br>
+            <input onclick="alert('Coming Soon!')" type="submit" id="pesan" value="pesan">
+        </div>
+        <br><br><br>
+    
+        <script type="text/javascript">
+        var jumlah = 1;
+        var jumlahEl = document.getElementById("jumlah");
+
+        function tambah(){
+            jumlah++;
+            jumlahEl.value = jumlah;
+        }
+        function kurang(){
+            if (jumlah> 1) {
+                jumlah--;
+                jumlahEl.value = jumlah;
+            }  
+        }
+        </script>
+    </section>
+    <br><br>
+    <footer class="footer-bar">
+        <div>
+           <a href="index.html"> <p style="text-decoration: none;" class="footer-text-left">
+            KANTIN FTI
+        </p></a>
+        </div>
+        <div class="footer-logo">
+            <img  class="footer-logo-img" src="./Images/Logo-UKSW.png" alt="T">
+            <img  class="footer-logo-img" src="./Images/Logo-Kemahasiswaan.png" alt="T">
+            <img  class="footer-logo-img" src="./Images/Logo-FTI.png" alt="T">
+        </div>
+        <div>
+            <ol class="footer-text-right">
+            <li><a class="footer-link" href="menu.html">Menu</a></li>
+            <li><a onclick="alert('Coming Soon!')" class="footer-link" href="#">Hubungi</a></li>
+            <li><a class="footer-link" href="menu.html">Menu</a></li>
+            <li><a onclick="alert('Coming Soon!')" class="footer-link" href="pemesanan.html">Keranjang</a></li>
+            <li><a target="_blank" class="footer-link" href="https://www.instagram.com/edwindtr__/">Profil</a></li>
+            </ol>
+        </div>  
+    </footer>
+</body>
+</html>

@@ -1,0 +1,358 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+/*Header*/
+.header-main{
+    background-image: url(https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.header-logo {
+    position: relative;
+    width: 55%;
+    margin-left: auto;
+    margin-top: 2%;
+}
+.banner-text {
+    text-align: center;
+    top: 50%;
+    left: 50.7%;
+    transform: translate(-50%, -50%);
+    color: black;
+    opacity: .9;
+    position: absolute;
+}
+.header-menu {
+    padding-left: 15px;
+    font-family: cursive;
+    font-style: oblique;
+    color: black;
+}
+.header-makanan {
+    padding-left: 25px;
+    font-family: cursive;
+    font-style: oblique;
+    color: black;
+}
+/*Navigasi Bar*/
+.navbar-main{ 
+    opacity: 0.9;
+}
+.navbar-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(0, 158, 226, 0.5);
+    height: 14mm;
+}
+.navbar-logo {
+    margin-top: -4.1mm;
+    width: 52px;
+    height: 52px;
+}
+.navbar-logo2 {
+    width: 35px;
+    height: 30px;
+    margin-top: -1.4mm;
+    padding-left: 1mm;
+    margin-left: 1mm;
+}
+.navbar-brand-text {
+    color: white;
+    padding-left: 15px;
+}
+.navbar-left{
+    color: white;
+    float: left;
+    padding-top: 1mm;
+    padding-bottom: 1mm;
+    padding-right: 5mm;
+    display: block;
+    padding-left: 5mm;
+    margin-top: 3mm;
+}
+.navbar-right{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    padding-top: 5mm;
+    text-decoration: none;
+    float: right;
+    margin-top: -1mm;
+}
+.navbar-right-icon {
+    height: 30px;
+    width: 30px;
+    padding-right: 5px;
+}
+/*Slider*/
+.slider {
+    width: 85%;
+    margin: 50px auto;
+    max-width: 60cm;
+    height: 8cm;
+}
+.slick-slide {
+    margin: 15px 30px;
+}
+.slick-slide img {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: 1;
+}
+.slick-active {
+    opacity: 1;
+}
+.slick-current {
+    opacity: 1;
+}
+.active {
+    background-color: #4CAF50;
+}
+.slider-description {
+    color: black;
+    text-align: left;
+    padding-left: 25px;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: -5mm;
+}
+/*Card .Index .pemesanan*/
+.card-menu {
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 15px;
+    width: 7cm;
+
+    display: inline-block;
+    margin: 15px 30px;
+    
+}
+.card-menu-img{
+    
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.card {
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 15px;
+}
+.card-harga-lama {
+   font-size: 12px;
+   padding-left: 20px;
+   color: rgb(198, 195, 195);
+}
+.card-harga-baru {
+    font-size: 12px;
+    padding-left: 20px;
+    
+}
+span {
+    color:#009EE2;;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 2px 16px;
+}
+/*card .pemesanan*/
+.card-pemesanan {
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;
+    display: inline-block;
+    margin: 5% 10%;
+}
+.card-pemesanan-deskripsi {
+    color: black;
+    text-align: left;
+    padding-left: 120mm;
+    margin-top: -100mm;
+    margin-bottom: 80mm;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+.card-pemesanan-deskripsi-produk{
+    color: black;
+    text-align: left;
+    padding-left: 120mm;
+    margin-top: -80mm;
+    margin-bottom: 80mm;
+    margin-right: 15mm;
+    font-family: monospace;
+    font-size: 14px;
+}
+.card-komposisi{
+    font-weight: bold;
+    color: black;
+}
+.card-pemesanan-harga-lama{
+    font-size: 12px;
+    color: rgb(198, 195, 195);
+    margin-top: -70mm;
+    margin-bottom: 40mm;
+    padding-left: 120mm;
+}
+.card-pemesanan-harga-baru {
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: -35mm;
+    margin-bottom: 60mm;
+    padding-left: 120mm;
+}
+.card-pemesanan-img {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    width: 40%;
+}
+.card-pemesanan-jumlah{
+    margin-left: 40%;
+    margin-top: -35mm;
+}
+.card-pemesanan-jumlah-deskripsi{
+    margin-top: -60mm;
+    margin-bottom: 20mm;
+    margin-left: 14%;
+    font-size: 22px;
+    
+}
+#kurang{
+    border: none;
+    color: white;
+    background: #009EE2;
+    border-radius: 6px;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+}
+#tambah{
+    border: none;
+    color: white;
+    background: #009EE2;
+    border-radius: 6px;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+}
+#jumlah {
+    width: 15%;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 5mm;
+    margin-right: 5mm;
+}
+#pesan {
+    width: 60%;
+    background: #00A8F0;
+    border-radius: 12px;
+    color: white;
+    padding: 14px 20px;
+    margin: -20px 20%;
+    border: none;
+    cursor: pointer;
+}
+
+/*Button Menu-selengkapnya*/
+.menu-selengkapnya {
+    text-align: center;
+}
+.menu-selengkapnya :hover{
+    background-color: rgb(22, 135, 172);
+}
+.menu-selengkapnya-button{
+    margin: 0;
+    padding: 17px;
+    background: #00A8F0;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.4);
+}
+/*Footer-Bar*/
+.footer-bar{
+    background: #009EE2;
+    height: 19%;
+    text-decoration: none;
+}
+.footer-text-left {
+    color: white;
+    font-size:20px;
+    padding-left:40px;
+    text-decoration: none;
+    word-spacing: 5px;
+    padding-top: 55px;
+}
+.footer-text-right {
+    padding-right:40px;
+    margin-top: -2cm;
+    float:right;
+    list-style-type: none;
+    color: white;
+}
+.footer-link{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    display: block;
+    text-align: right;
+}
+.footer-bar div a {
+    text-decoration: none;
+}
+.footer-logo {
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-top: -1.4cm;
+}
+.footer-logo-img{
+    width: 50px;
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 40px;
+}
